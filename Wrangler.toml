@@ -2,5 +2,5 @@ name = "message-board-api"
 compatibility_date = "2023-05-15"
 
 kv_namespaces = [
-    { binding = "MESSAGES", id = "your-kv-namespace-id" }
+    { binding = "MESSAGES", id = "5003b206b3b44570a69ce58e60488c5a" }
 ]
