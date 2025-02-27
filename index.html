@@ -2,14 +2,15 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markdown留言板</title>
     <link rel="stylesheet" href="style.css">  
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
-</head>
-<div class="container">
-    <div class="box">
-        <textarea id="content" placeholder="输入Markdown内容..."></textarea>
+<body>
+    <div class="container">
+        <div class="box">
+            <textarea id="content" placeholder="输入Markdown内容..."></textarea>
         <input type="text" id="tags" placeholder="标签（逗号分隔）">
         <button onclick="submitMessage()">发送</button>
     </div>
