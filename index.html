@@ -7,16 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
 </head>
-<body>
-    <div class="container">
-        <h1>留言板</h1>
-        <div class="editor">
-            <textarea id="content" placeholder="输入Markdown内容..."></textarea>
-            <input type="text" id="tags" placeholder="输入标签（逗号分隔）">
-            <button onclick="submitMessage()">发布</button>
-        </div>
-        <div id="messages"></div>
+<div class="container">
+    <div class="box">
+        <textarea id="content" placeholder="输入Markdown内容..."></textarea>
+        <input type="text" id="tags" placeholder="标签（逗号分隔）">
+        <button onclick="submitMessage()">发送</button>
     </div>
-    <script src="script.js"></script>
-</body>
+
+    <div id="messages" class="messages-container">
+        <!-- 留言将通过JS动态加载 -->
+    </div>
+</div>
 </html>
